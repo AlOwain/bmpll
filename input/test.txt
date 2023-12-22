@@ -1,0 +1,30 @@
+#   All lines that begin with a "#" are ignored.
+
+#   The input image must be square.
+
+#   The first line must specify the `pixel-area`
+# the pixel-area is:
+#   (the longitude at the start - the longitude at the end / the pixel count).
+# Or equally (since the input image is a square image):
+#   (the latitude at the start - the latitude at the end / the pixel count).
+
+#   The second line must specify the `map-coordinate`;
+# the area coordinate is the coordinate of the first pixel
+# starting from the top right corner.
+
+#   Colors inputted must be in a r, g, b format
+# the red, green, and blue values must be specified from 0.0 - 1.0
+
+#   Every new rule must be inputted in a seperate line.
+# A rule is set in this format:
+#   (rule's name) = (color)
+
+#   All spaces and empty lines are ignored.
+
+pixel-area = 0.000023
+map-coordinate = 31.324644
+
+Area = 1.0, 1.0, 1.0
+aREa2 = 1.0, 0.0, 0.0
+_area3 = 0.0, 1.0, 0.0
+4 = 0.0, 0.0, 1.0
