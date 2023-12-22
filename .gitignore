@@ -36,8 +36,8 @@ build
 
 # Input items
 input/*.bmp
-input/*.txt
+input/*.rules
 
 # Include test input items
-!input/test.bmp
-!input/test.txt
+!input/example.bmp
+!input/example.rules
