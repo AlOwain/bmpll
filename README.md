@@ -6,43 +6,36 @@ This program is aimed to determine on which area a specific coordinate lies. Spe
 
 ### Image file:
 
-_to be specified later_
+- The input image must be square.
+
+_to be expanded on later..._
 
 ### Rules file:
 
-- All lines that begin with a "#" are ignored.
-
-- The input image must be square.
-
-- You must specify the `pixel-area` or it will default to (1.0).
-
-- You must specify the `map-coordinates`, or it will default to (0.0, 0.0); the map coordinate is the coordinate of the pixel on the top left corner.
-
-- Colors inputted must be in a r, g, b format the red, green, and blue values must be specified from (0.0 - 1.0).
-
-- Every new rule must be inputted in a seperate line.
-
-- All spaces and empty lines are ignored.
-
 - Rule names must be unique.
+- Every new rule must be inputted in a seperate line.
+- You must specify the `pixel-area` or it will default to (1.0).
+- You must specify the `map-coordinates`, or it will default to (0.0, 0.0); the map coordinate is the coordinate of the pixel on the top left corner.
+- Colors inputted must be in a (r, g, b) format the red, green, and blue values should be specified from (0.0 - 1.0).
+- All spaces, commented lines and empty lines are ignored. (Commented lines are lines that begin with a '#')
 
-##### The pixel-area is:
+#### The pixel-area is:
 
 ```
 (the longitude at the start - the longitude at the end / the pixel count)
 ```
-Or equally (since the input image is a square image):
+Or equally _(since the input image should be a square image):_
 ```
 (the latitude at the start - the latitude at the end / the pixel count)
 ```
 
-##### A rule is set in this format:
+#### A rule is set in this format:
 
 ```
-(rule's name) = (instruction)
+(rules' name) = (instruction)
 ```
 
-##### Those are all valid instructions:
+#### This is an example of valid instructions:
 
 ```
 pixel-area = 0.000023
