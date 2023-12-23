@@ -2,10 +2,10 @@
 
 rule_settor::rule_settor(const char* filepath)
 {
-    std::vector<std::string> next_line = parse_next_line(filepath);
+    std::vector<std::string> instructions = parse_file(filepath);
 }
 
-std::vector<std::string> parse_next_line(const char* filepath)
+std::vector<std::string> parse_file(const char* filepath)
 {
     std::ifstream input(filepath);
     if (!input.is_open()) exit(-1);

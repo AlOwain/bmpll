@@ -11,4 +11,4 @@ public:
     rule_settor(const char* filepath);
 };
 
-std::vector<std::string> parse_next_line(const char* filepath);
+std::vector<std::string> parse_file(const char* filepath);
