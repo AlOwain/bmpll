@@ -1,13 +1,13 @@
-#include "rule_settor.h"
+#include "rule_setter.h"
 
-rule_settor::rule_settor(const char* filepath)
+rule_setter::rule_setter(const char* filepath)
 {
     std::vector<std::string> instructions = parse_file(filepath);
 
     for (std::string rule: instructions) apply_rule(rule);
 }
 
-void rule_settor::apply_rule(std::string str_rule)
+void rule_setter::apply_rule(std::string str_rule)
 {
     std::vector<std::string> words = split(str_rule);
     

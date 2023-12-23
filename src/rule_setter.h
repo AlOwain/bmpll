@@ -11,13 +11,13 @@
 
 
 
-class rule_settor {
+class rule_setter {
 public:
     struct vec2 {
         double x, y;
     };
 
-    rule_settor(const char* filepath);
+    rule_setter(const char* filepath);
 
     void apply_rule(std::string str_rule);
 private:

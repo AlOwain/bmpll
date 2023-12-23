@@ -1,8 +1,8 @@
-#include "rule_settor.h"
+#include "rule_setter.h"
 
 int main(int argc, char** argv)
 {
-    rule_settor x("input/example.rules");
+    rule_setter x("input/example.rules");
 
     return 0;
 }
