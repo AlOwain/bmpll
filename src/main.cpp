@@ -3,4 +3,6 @@
 int main(int argc, char** argv)
 {
     rule_settor x("input/example.rules");
+
+    return 0;
 }

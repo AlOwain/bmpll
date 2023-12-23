@@ -2,19 +2,20 @@
 
 rule_settor::rule_settor(const char* filepath)
 {
-    input.open(filepath);
-    if (!input.is_open()) exit(-1);
-    
-    std::string next_line = parse_next_line();
-
-    input.close();
+    std::vector<std::string> next_line = parse_next_line(filepath);
 }
 
-std::string rule_settor::parse_next_line()
+std::vector<std::string> parse_next_line(const char* filepath)
 {
+    std::ifstream input(filepath);
+    if (!input.is_open()) exit(-1);
+
+    std::vector<std::string> rules = {};
     std::string line;
     while(getline(input, line))
         if (line[0] != '#' && line != "")
-            return line;
-    return "";
+            rules.push_back(line);
+
+    input.close();
+    return rules;
 }

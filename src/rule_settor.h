@@ -1,6 +1,6 @@
-#include "area.h"
 #include <cstdlib>
 #include <fstream>
+#include <string>
 #include <vector>
 
 // Unnecessary, to be removed later.
@@ -9,10 +9,6 @@
 class rule_settor {
 public:
     rule_settor(const char* filepath);
-
-private:
-    std::ifstream input;
-
-    std::string parse_next_line();
 };
 
+std::vector<std::string> parse_next_line(const char* filepath);
