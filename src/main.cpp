@@ -1,9 +1,10 @@
 #include "bmp/bmp.h"
-#include "rule_setter.h"
+#include "rules/rules.h"
 
 int main(int argc, char** argv)
 {
-    rule_setter y("input/example.rules");
+    rules y;
+    y.apply_rule("input/example.rules");
 
     bmp x("input/example.bmp");
 

@@ -1,13 +1,15 @@
-#include "rule_setter.h"
+#include "rules.h"
 
-rule_setter::rule_setter(const char* filepath)
+rules::rules() {}
+
+void rules::apply_rule(const char* filepath)
 {
-    std::vector<std::string> instructions = parse_file(filepath);
+    std::vector<std::string> instructions = parse_rules_file(filepath);
 
     for (std::string rule: instructions) apply_rule(rule);
 }
 
-void rule_setter::apply_rule(std::string str_rule)
+void rules::apply_rule(std::string str_rule)
 {
     std::vector<std::string> words = split(str_rule);
     
@@ -31,13 +33,13 @@ void rule_setter::apply_rule(std::string str_rule)
         });
 }
 
-std::vector<std::string> parse_file(const char* filepath)
+std::vector<std::string> parse_rules_file(const char* filepath)
 {
     std::ifstream input(filepath);
     if (!input.is_open()) exit(-1);
 
-    std::vector<std::string> rules = {};
     std::string line;
+    std::vector<std::string> rules = {};
     while(getline(input, line))
         if (line[0] != '#' && line != "")
             rules.push_back(line);
@@ -49,8 +51,8 @@ std::vector<std::string> parse_file(const char* filepath)
 
 std::vector<std::string> split(std::string line)
 {
-    std::vector<std::string> words;
     std::string buffer;
+    std::vector<std::string> words;
     for (int i = 0; i < line.length(); i++)
     {
         if (line[i] == '=' || line[i] == ',')

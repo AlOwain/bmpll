@@ -1,6 +1,6 @@
 #pragma once
 
-#include "bmp/bmp.h"
+#include "../bmp/bmp.h"
 #include <string>
 
 class area {

@@ -9,14 +9,15 @@
 // Unnecessary, to be removed later.
 #include <iostream>
 
-class rule_setter {
+class rules {
 public:
     struct vec2 {
         double x, y;
     };
 
-    rule_setter(const char* filepath);
+    rules();
 
+    void apply_rule(const char* filepath);
     void apply_rule(std::string str_rule);
 private:
     std::vector<area> areas;
@@ -27,5 +28,5 @@ private:
     void set_map_coords(std::string map_coords_x, std::string map_coords_y);
 };
 
-std::vector<std::string> parse_file(const char* filepath);
+std::vector<std::string> parse_rules_file(const char* filepath);
 std::vector<std::string> split(std::string line);
