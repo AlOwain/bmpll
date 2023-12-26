@@ -1,6 +1,6 @@
 #include "area.h"
 
-area::area(std::string name, bmp::color color)
+area::area(std::string name, Color color)
 {
     this->name = name;
     this->color = color;
