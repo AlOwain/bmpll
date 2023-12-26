@@ -3,7 +3,7 @@
 
 int main(int argc, char** argv)
 {
-    // rule_setter x("input/example.rules");
+    rule_setter y("input/example.rules");
 
     bmp x("input/example-simple.bmp");
 

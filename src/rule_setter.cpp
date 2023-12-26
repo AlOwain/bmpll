@@ -11,6 +11,11 @@ void rule_setter::apply_rule(std::string str_rule)
 {
     std::vector<std::string> words = split(str_rule);
     
+    /*
+    * FIXME: You must validate the data correctly and,
+    * set it in set_pixel_area(), set_map_coords(), and
+    * the area should be parsed in its constructor.
+    */
     if (words[0] == "pixel-area")
         pixel_area = std::atof(words[1].c_str()); 
     else if (words[0] == "map-coordinates")
@@ -19,9 +24,9 @@ void rule_setter::apply_rule(std::string str_rule)
     else
         areas.push_back({
             words[0].c_str(), {
-                std::atof(words[1].c_str()),
-                std::atof(words[2].c_str()),
-                std::atof(words[3].c_str())
+                (uint8_t) std::atoi(words[1].c_str()),
+                (uint8_t) std::atoi(words[2].c_str()),
+                (uint8_t) std::atoi(words[3].c_str())
             }
         });
 }

@@ -23,7 +23,7 @@ _to be expanded on later..._
 - Every new rule must be inputted in a seperate line.
 - You must specify the `pixel-area` or it will default to (1.0).
 - You must specify the `map-coordinates`, or it will default to (0.0, 0.0); the map coordinate is the coordinate of the pixel on the top left corner.
-- Colors inputted must be in a (r, g, b) format the red, green, and blue (r, g, b) values should be specified from (0.0 - 1.0).
+- Colors inputted must be in a (r, g, b) format the red, green, and blue (r, g, b) values should be specified from (0 - 255).
 - All spaces, commented lines and empty lines are ignored. (Commented lines are lines that begin with a '#')
 
 #### The pixel-area is:

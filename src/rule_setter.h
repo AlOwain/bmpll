@@ -9,8 +9,6 @@
 // Unnecessary, to be removed later.
 #include <iostream>
 
-
-
 class rule_setter {
 public:
     struct vec2 {
@@ -25,8 +23,8 @@ private:
     vec2 map_coords;
     double pixel_area;
 
-    void set_pixel_area(double pixel_area);
-    void set_map_coords(vec2 map_coords);
+    void set_pixel_area(std::string pixel_area);
+    void set_map_coords(std::string map_coords_x, std::string map_coords_y);
 };
 
 std::vector<std::string> parse_file(const char* filepath);

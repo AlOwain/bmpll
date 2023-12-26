@@ -1,15 +1,12 @@
 #pragma once
 
+#include "bmp/bmp.h"
 #include <string>
 
 class area {
 public:
-    struct color {
-        double r, g, b;
-    };
-
-    area(std::string name, color color);
+    area(std::string name, bmp::color color);
 private:
     std::string name;
-    struct color color;
+    bmp::color color;
 };
