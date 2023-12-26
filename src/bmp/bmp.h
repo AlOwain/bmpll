@@ -3,9 +3,9 @@
 #include "../color/color.h"
 #include <fstream>
 
-class bmp {
+class BMP {
 public:
-    bmp(const char *filepath);
+    BMP(const char *filepath);
 
     Color get_pixel(int x, int y);
     int get_height();

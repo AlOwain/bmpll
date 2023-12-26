@@ -9,18 +9,18 @@
 // Unnecessary, to be removed later.
 #include <iostream>
 
-class rules {
+class Rules {
 public:
     struct vec2 {
         double x, y;
     };
 
-    rules();
+    Rules();
 
     void apply_rule(const char* filepath);
     void apply_rule(std::string str_rule);
 private:
-    std::vector<area> areas;
+    std::vector<Area> areas;
     vec2 map_coords;
     double pixel_area;
 

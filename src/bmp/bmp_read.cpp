@@ -1,6 +1,6 @@
 #include "bmp.h"
 
-void bmp::read(const char* filepath)
+void BMP::read(const char* filepath)
 {
     std::ifstream input(filepath, std::ios::binary);
     if (!input.is_open()) exit(-1);
@@ -50,9 +50,9 @@ void bmp::read(const char* filepath)
     /* Moves cursor to offset where data starts */
     input.seekg(offset, input.beg);
 
-    data = new color*[height];
+    data = new Color*[height];
     for (int i = 0; i < width; i++)
-        data[i] = new color[width];
+        data[i] = new Color[width];
 
     for (int i = height - 1; i >= 0; i--)
     {

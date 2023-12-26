@@ -1,15 +1,15 @@
 #include "rules.h"
 
-rules::rules() {}
+Rules::Rules() {}
 
-void rules::apply_rule(const char* filepath)
+void Rules::apply_rule(const char* filepath)
 {
     std::vector<std::string> instructions = parse_rules_file(filepath);
 
     for (std::string rule: instructions) apply_rule(rule);
 }
 
-void rules::apply_rule(std::string str_rule)
+void Rules::apply_rule(std::string str_rule)
 {
     std::vector<std::string> words = split(str_rule);
     

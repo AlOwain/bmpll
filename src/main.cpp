@@ -3,10 +3,10 @@
 
 int main(int argc, char** argv)
 {
-    rules y;
+    Rules y;
     y.apply_rule("input/example.rules");
 
-    bmp x("input/example.bmp");
+    BMP x("input/example.bmp");
 
     return 0;
 }

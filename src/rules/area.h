@@ -4,9 +4,9 @@
 #include "../color/color.h"
 #include <string>
 
-class area {
+class Area {
 public:
-    area(std::string name, Color color);
+    Area(std::string name, Color color);
 private:
     std::string name;
     Color color;
