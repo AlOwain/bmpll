@@ -42,14 +42,4 @@ Or equally _(since the input image should be a square image):_
 (rules' name) = (instruction)
 ```
 
-#### This is an example of valid instructions:
-
-```
-pixel-area = 0.000023
-map-coordinates = 31.324644, 20.04920134
-
-Area = 1.0, 1.0, 1.0
-aREa2 = 1.0, 0.0, 0.0
-_area3 = 0.0, 1.0, 0.0
-4 = 0.0, 0.0, 1.0
-```
+#### [This](https://github.com/AlOwain/bmpll/blob/master/input/example.rules) is an example of valid instructions
