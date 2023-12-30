@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../color/color.h"
+#include "color.h"
 #include <fstream>
 
 class BMP {

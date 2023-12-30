@@ -1,7 +1,7 @@
 #pragma once
 
-#include "../bmp/bmp.h"
-#include "../color/color.h"
+#include "../../headers/bmp.h"
+#include "../../headers/color.h"
 #include <string>
 
 class Area {

@@ -26,9 +26,9 @@ void Rules::apply_rule(std::string str_rule)
     else
         areas.push_back({
             words[0].c_str(), {
-                (uint8_t) std::atoi(words[1].c_str()),
-                (uint8_t) std::atoi(words[2].c_str()),
-                (uint8_t) std::atoi(words[3].c_str())
+                words[1].c_str(),
+                words[2].c_str(),
+                words[3].c_str()
             }
         });
 }

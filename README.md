@@ -2,6 +2,10 @@
 
 This program is aimed to determine on which area a specific coordinate lies. Speed is an important factor in this project, I realize I could have used a mathematical approach, but this solution seems simpler, and definitely faster.
 
+## Requirements
+
+- [lib_bmp](https://github.com/AlOwain/lib_bmp)
+
 ## Command line arguments
 
 - Rules file path
