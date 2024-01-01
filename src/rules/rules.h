@@ -19,6 +19,8 @@ public:
 
     void apply_rule(const char* filepath);
     void apply_rule(std::string str_rule);
+
+    std::string get_area_name(Color color);
 private:
     std::vector<Area> areas;
     vec2 map_coords;

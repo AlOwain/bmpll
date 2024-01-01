@@ -33,6 +33,16 @@ void Rules::apply_rule(std::string str_rule)
         });
 }
 
+std::string Rules::get_area_name(Color color)
+{
+    for (int i = 0; i < areas.size(); i++)
+    {
+        if (color == areas[i].get_color())
+            return areas[i].get_name();
+    }
+    return "";
+}
+
 std::vector<std::string> parse_rules_file(const char* filepath)
 {
     std::ifstream input(filepath);

@@ -20,6 +20,8 @@ public:
     void set_color(uint8_t r, uint8_t g, uint8_t b);
 
     RGB get_color();
+
+    bool operator==(Color right_color);
 private:
     RGB color;
 };

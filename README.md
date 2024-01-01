@@ -10,6 +10,7 @@ This program is aimed to determine on which area a specific coordinate lies. Spe
 
 - Rules file path
 - Image file path
+- Coordinates file path
 
 _to be expanded on later..._
 
