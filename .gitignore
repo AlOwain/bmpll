@@ -38,5 +38,4 @@ build
 input/*
 
 # Include test input items
-!input/example.bmp
-!input/example.rules
+!input/test
