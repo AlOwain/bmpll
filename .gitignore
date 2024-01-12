@@ -35,8 +35,7 @@
 build
 
 # Input items
-input/*.bmp
-input/*.rules
+input/*
 
 # Include test input items
 !input/example.bmp
