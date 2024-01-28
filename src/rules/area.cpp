@@ -2,9 +2,9 @@
 
 Area::Area(std::string name, Color color)
 {
-    this->name = name;
-    this->color = color;
+    this->m_name = name;
+    this->m_color = color;
 }
 
-std::string Area::get_name() { return name; }
-Color Area::get_color() { return color; }
+std::string Area::name() { return m_name; }
+Color Area::color() { return m_color; }

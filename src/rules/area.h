@@ -8,9 +8,9 @@ class Area {
 public:
     Area(std::string name, Color color);
 
-    std::string get_name();
-    Color get_color();
+    std::string name();
+    Color color();
 private:
-    std::string name;
-    Color color;
+    std::string m_name;
+    Color m_color;
 };
